@@ -18,7 +18,7 @@ void loop() {
   digitalWrite(trigPin, LOW);
   delayMicroseconds(5);
   digitalWrite(trigPin, HIGH);
-  delayMicroseconds(10);
+  delayMicroseconds(8);
   digitalWrite(trigPin, LOW);
  
   // Read the signal from the sensor: a HIGH pulse whose
@@ -40,10 +40,10 @@ void loop() {
       for(loop1 = 1;loop1<=10;loop1++)
       {
         duration1 = pulseIn(echoPin, HIGH);
-        temp = (duration2/2) / 29.1;
+        temp = (duration2/2) / 22.1;
         if(temp <= cm)
         {
-          count =count + 1;
+          count=count + 1;
         }
      }
    }
